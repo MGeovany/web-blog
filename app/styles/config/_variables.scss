@@ -4,9 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+//colors
 $lg-purple  : linear-gradient(180deg, rgba(177,18,175,1) 0%, rgba(44,0,120,1) 100%);
 $lg-pink    : linear-gradient(180deg, rgba(223,167,217,1) 0%, rgba(195,96,219,1) 42%, rgba(64,17,156,1) 100%);
 
+//resources
 $stat       : "/images/stat.png";
 
 //fonts
@@ -16,4 +18,6 @@ $osw        :'Oswald', sans-serif;
 $rubik      :'Rubik Mono One', sans-serif;
 $poppins    :'Poppins', sans-serif;
 
+//sizes
 $bfont      :1.750rem;
+$h1siz      :5rem;
