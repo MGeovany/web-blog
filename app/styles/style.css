@@ -1,9 +1,124 @@
-body {
-  background-color: #333;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-.head {
-  color: lime;
-  font-family: 'Times New Roman', Times, serif;
+html {
+  scroll-behavior: smooth;
+  overflow: auto;
+}
+
+body {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dfa7d9), color-stop(42%, #c360db), to(#40119c));
+  background-image: linear-gradient(180deg, #dfa7d9 0%, #c360db 42%, #40119c 100%);
+  background-attachment: fixed;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  background-image: url("/images/stat.png");
+  border-color: transparent;
+  background-size: cover;
+}
+
+.header nav {
+  padding: 0px;
+}
+
+.header__links {
+  padding: 50px  50px 0 0;
+}
+
+.header__links a {
+  position: relative;
+  font-size: 1.75rem;
+  color: white;
+  -webkit-transition: color 500ms ease-in-out;
+  transition: color 500ms ease-in-out;
+}
+
+.header__links a:not(last-child) {
+  margin-right: 72px;
+}
+
+.header__links a:hover {
+  color: #1C0648;
+}
+
+.header__links a:hover::before {
+  opacity: 1;
+}
+
+.header__links a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 5px;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+  border-radius: 20px;
+  background: white;
+  opacity: 0;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-ai-r {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+button,
+input {
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+.texxt {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
