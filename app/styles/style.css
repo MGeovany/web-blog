@@ -3,12 +3,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
 }
 
 html {
@@ -31,6 +31,38 @@ img {
   background-size: cover;
 }
 
+button,
+input {
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+.texxt {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  display: block;
+  position: absolute;
+  top: 250px;
+  left: 750px;
+  font-size: 1.5rem;
+}
+
+.texxt::before {
+  content: "";
+}
+
+h1 {
+  font-size: 6rem;
+}
+
 .header nav {
   padding: 0px;
 }
@@ -42,9 +74,11 @@ img {
 .header__links a {
   position: relative;
   font-size: 1.75rem;
+  font-family: 'Overpass', sans-serif;
   color: white;
   -webkit-transition: color 500ms ease-in-out;
   transition: color 500ms ease-in-out;
+  font-weight: bold;
 }
 
 .header__links a:not(last-child) {
@@ -104,29 +138,83 @@ img {
           justify-content: flex-end;
 }
 
-button,
-input {
-  border: none;
-  outline: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-a, a:visited, a:hover {
-  text-decoration: none;
-}
-
-.texxt {
-  color: white;
-  display: block;
+.mas {
+  background-color: white;
+  height: 107px;
+  width: 35px;
   position: absolute;
-  top: 30%;
-  left: 40%;
+  top: 80px;
+  left: 850px;
 }
 
-h1 {
-  font-size: 5rem;
+.mas::before {
+  content: "";
+  width: 107px;
+  height: 35px;
+  display: block;
+  background-color: white;
+  position: absolute;
+  top: 35%;
+  left: -36px;
+}
+
+.equis {
+  background-color: white;
+  height: 107px;
+  width: 35px;
+  position: absolute;
+  top: 750px;
+  left: 1500px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.equis::before {
+  content: "";
+  width: 107px;
+  height: 35px;
+  display: block;
+  background-color: white;
+  position: absolute;
+  top: 35%;
+  left: -36px;
+}
+
+.up-corner {
+  background-color: white;
+  height: 165px;
+  width: 5px;
+  position: absolute;
+  top: -130px;
+  left: 587px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.up-corner::before {
+  content: "";
+  height: 5px;
+  width: 147px;
+  display: block;
+  background-color: white;
+}
+
+.down-corner {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  background-color: white;
+  height: 147px;
+  width: 5px;
+  position: absolute;
+  top: 350;
+  left: 7px;
+}
+
+.down-corner::before {
+  content: "";
+  height: 5px;
+  width: 147px;
+  display: block;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */

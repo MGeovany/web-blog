@@ -1,13 +1,20 @@
-
-
 .texxt{
+    font-family: $roboto;
     color: white;
     display: block;
     position: absolute;
-    top: 30%;
-    left: 40%;
+    //top: 30%;
+    top: 250px;
+    left: 750px;
+    font-size: 1.5rem;
+
+    &::before{
+        content: "";
+    }
+    
 } 
+
 
 h1{
     font-size: $h1siz;
-} 
+}

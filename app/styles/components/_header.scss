@@ -1,0 +1,76 @@
+
+.header{ 
+
+    nav{
+        padding: 0px;
+    }
+    
+    &__links{
+
+        padding: 50px  50px 0 0;
+
+        a{
+            position: relative;
+            font-size  : $bfont;
+            font-family: 'Overpass', sans-serif;
+            color: white;
+            transition: color 500ms ease-in-out;
+            font-weight: bold;
+            
+           
+        
+            &:not(last-child){
+                margin-right: 72px;
+            }
+
+            &:hover{
+                color: #1C0648;
+
+                &::before{
+                    opacity: 1;
+                }
+            }
+
+            &::before{
+                content: "";
+                display: block;
+                position: absolute;
+                height: 5px;
+                left: 0;
+                right: 0;
+                bottom: -30px;
+                border-radius: 20px;
+                background: white;
+                opacity: 0;
+                transition: opacity 300ms ease-in-out;
+            }
+
+        }
+        
+    }
+}
+
+.flex {
+
+    display: flex;
+
+  
+
+    &-sb{
+       justify-content: space-between;
+
+    }
+
+    &-jc-c{
+        justify-content: center;
+
+    }
+    &-ai-c{
+        align-items: center;
+
+    }
+    &-ai-r{
+        justify-content: flex-end;    
+    }
+
+}

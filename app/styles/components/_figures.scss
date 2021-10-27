@@ -1,0 +1,94 @@
+
+
+.mas{
+    background-color: white;
+    height: 107px;
+    width: 35px;
+    position: absolute;
+   
+    top: 80px;
+    left: 850px;
+
+    &::before{
+        content: "";
+        width: 107px;
+        height: 35px;
+        display: block;
+        background-color: white;
+        
+        position: absolute;
+        top: 35%;
+        left: -36px;
+        
+    }
+}
+   
+.equis{
+    background-color: white;
+    height: 107px;
+    width: 35px;
+    position: absolute;
+    top: 750px;
+    left: 1500px;
+    transform: rotate(45deg);
+    
+    &::before{
+        content: "";
+        width: 107px;
+        height: 35px;
+        display: block;
+        background-color: white;
+            
+        position: absolute;
+        top: 35%;
+        left: -36px;
+    }
+}
+
+.up-corner{
+    background-color: white;
+    height: 165px;
+    width: 5px;
+
+    position: absolute;
+    top: -130px;
+    left: 587px;
+    transform: rotate(90deg);
+
+    &::before{
+        content: "";
+        height: 5px;
+        width: 147px;
+        display: block;
+        background-color: white;
+            
+        
+    }
+    
+}
+
+.down-corner{
+    transform: rotate(270deg);
+    background-color: white;
+    height: 147px;
+    width: 5px;
+
+    position: absolute;
+    top: 350;
+    left: 7px;
+        
+
+    &::before{
+        content: "";
+        height: 5px;
+        width: 147px;
+        display: block;
+        background-color: white;
+
+      
+        
+    }
+    
+}
+
+
