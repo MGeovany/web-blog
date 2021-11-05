@@ -4,9 +4,12 @@
     display: block;
     position: absolute;
     //top: 30%;
-    top: 250px;
-    left: 750px;
+    top: 330px;
+    left: 1000px;
     font-size: 1.5rem;
+
+   // animation: emerge 200ms ease-in-out;
+
 
     &::before{
         content: "";

@@ -22,16 +22,23 @@
         
     }
 }
+
+.equisu{
+    transform: rotate(135deg);
+    
+    height: 107px;
+    width: 35px;
+    position: absolute;
+    top: 800px;
+    left: 2000px;
+}
    
 .equis{
     background-color: white;
     height: 107px;
     width: 35px;
     position: absolute;
-    top: 750px;
-    left: 1500px;
-    transform: rotate(45deg);
-    
+
     &::before{
         content: "";
         width: 107px;
@@ -74,7 +81,7 @@
     width: 5px;
 
     position: absolute;
-    top: 350;
+    top: 350px;
     left: 7px;
         
 
@@ -92,3 +99,108 @@
 }
 
 
+.line1{
+    background-image: $lg-wpink;
+    height: 484px;
+    width: $l-size;
+    position: absolute;
+    
+    top: 166px;
+    left: 610px;
+
+    border-radius: 50px;
+
+    &::before{
+        content: "";
+        height: 340px;
+        width: $l-size;
+        display: block;
+        background-image: $lg-gray;
+
+        position: absolute;
+        top: 525px;
+        left: 0px;
+        border-radius: 50px;
+    }
+
+    &::after{
+        content: "";
+        height: 250px;
+        width: $l-size;
+        display: block;
+        background-image: $lg-blue;
+
+        position: absolute;
+        top: 325px;
+        left: -60px;
+        border-radius: 50px;
+    }
+
+
+}
+
+.line2{
+    background-image: $lg-purpblue;
+    height: 484px;
+    width: $l-size;
+    position: absolute;
+    
+    top: 20px;
+    left: 60px;
+
+    border-radius: 50px;
+
+    &::before{
+        content: "";
+        height: 260px;
+        width: $l-size;
+        display: block;
+        background-image: $lg-gpink;
+
+        position: absolute;
+        top: 790px;
+        left: 0px;
+        border-radius: 50px;
+    }
+
+    &::after{
+        content: "";
+        height: 250px;
+        width: $l-size;
+        display: block;
+        background-image: $lg-wpink;
+
+        position: absolute;
+        top: 330px;
+        left: -40px;
+        border-radius: 50px;
+    }
+
+
+}
+
+.circle1{
+    background-image: $lg-purpblue;
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    
+    top: 700px;
+    left: 420px;
+
+    border-radius: 50px;
+    
+    &::before{
+        content: "";
+        display: block;
+        background-image: $lg-wpink;
+        height: 60px;
+        width: 60px;
+        position: absolute;
+        
+        top: -670px;
+        left: -330px;
+    
+        border-radius: 50px;
+    }
+}

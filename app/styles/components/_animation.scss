@@ -1,0 +1,107 @@
+@keyframes emerge-up {
+   from {
+     visibility: hidden;
+     opacity: 0;
+     top: -100px;
+    }
+   1% {
+     visibility: visible;
+     opacity: 0;
+    }
+   to {
+     visibility: visible;
+     opacity: 1;
+    }
+}
+
+@keyframes emerge-down {
+  from {
+    visibility: hidden;
+    opacity: 0;
+    top: 900px;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes popp {
+  from {
+    visibility: hidden;
+    opacity: 0;
+    height: 10px;
+    width: 10px;
+    transform: rotate(360deg);
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+@keyframes floating {
+  from {
+    transform: translateY(0px);
+    }
+
+  to {
+    transform:translateY(-8px);
+    
+  }
+}
+
+@keyframes floating1 {
+  from {
+    transform: translateY(-5px);
+  } 
+  to {
+    transform: translateY(12px);
+  }
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(3px);
+
+  } 
+  to {
+    transform: translateY(-6px);
+
+  }
+}
+
+
+.texxt, .line2 {
+  animation: emerge-up 1500ms  ease-in-out forwards;
+}
+
+.circle1{
+  animation: emerge-down 1500ms  ease-in-out forwards;
+}
+
+.line1{
+  animation: emerge-down 1500ms  ease-in-out forwards;
+}
+
+
+
+.equis{
+  animation: floating 2s ease-in-out 0s infinite alternate;
+}
+
+.imgg{
+  animation: floating1 2s ease-in-out 0s infinite alternate;
+}
+
+.mas{
+  animation: bounce 2s ease-in-out 0s infinite alternate;
+}
